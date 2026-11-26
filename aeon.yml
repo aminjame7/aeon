@@ -143,7 +143,7 @@ skills:
 
   # --- Ported from derivative instances (2026-08-08) ---
   # Security (pairs with vuln-scanner)
-  hunter-22: { enabled: false, schedule: "0 10 * * *", var: "" } # daily bounty scan against ClawHunter's free discovery API (docs/ClawHunter-API.md) — capability-matched, triaged for real work vs content-farming, dedup'd against memory/topics/hunter-22-seen.json. Discovery only, no wallet, never claims/submits; audit-shaped matches with a linked GitHub repo get a one-tap "run vuln-scanner on it" button in the notification.
+  hunter-22: { enabled: true, schedule: "0 10 * * *", var: "" } # daily bounty scan against ClawHunter's free discovery API (docs/ClawHunter-API.md) — capability-matched, triaged for real work vs content-farming, dedup'd against memory/topics/hunter-22-seen.json. Discovery only, no wallet, never claims/submits; audit-shaped matches with a linked GitHub repo get a one-tap "run vuln-scanner on it" button in the notification.
 
   # Product / ops (config: memory/products.md)
 
