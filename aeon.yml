@@ -159,7 +159,7 @@ skills:
   rightstack: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand Web3 stack advisor. var: <build goal> | recommend:<goal> | workflow:<id> | compare:<a>|<b> | explain:<tool> | migrate:<package>. Read-only; pinned to rightstack@0.3.2 schema v1 JSON.
 
   # On-demand (run from the dashboard / `./aeon skills run`; create-prove is also dispatched by the dev-loop chain)
-  competitor-monitor: { enabled: false, schedule: "workflow_dispatch", var: "" } # snapshot competitor pages (pricing, headings, CTAs, new/removed pages) and report what changed. var: comma-separated URLs
+  competitor-monitor: { enabled: true, schedule: "workflow_dispatch", var: "" } # snapshot competitor pages (pricing, headings, CTAs, new/removed pages) and report what changed. var: comma-separated URLs
   cortx-reliability: { enabled: false, schedule: "workflow_dispatch", var: "" } # check an x402 endpoint's paid delivery rate, incidents, and latency before spending on it. var: endpoint URL (required)
   create-prove: { enabled: false, schedule: "workflow_dispatch", var: "" } # run a changed skill for real at a PR head and attach SHA-bound proof. var: owner/repo#pr@<40-char sha>
   higgsfield: { enabled: false, schedule: "workflow_dispatch", var: "" } # generate images/video via the Higgsfield MCP. var: the generation request (required)
