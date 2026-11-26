@@ -162,7 +162,7 @@ skills:
   competitor-monitor: { enabled: true, schedule: "workflow_dispatch", var: "" } # snapshot competitor pages (pricing, headings, CTAs, new/removed pages) and report what changed. var: comma-separated URLs
   cortx-reliability: { enabled: false, schedule: "workflow_dispatch", var: "" } # check an x402 endpoint's paid delivery rate, incidents, and latency before spending on it. var: endpoint URL (required)
   create-prove: { enabled: false, schedule: "workflow_dispatch", var: "" } # run a changed skill for real at a PR head and attach SHA-bound proof. var: owner/repo#pr@<40-char sha>
-  higgsfield: { enabled: false, schedule: "workflow_dispatch", var: "" } # generate images/video via the Higgsfield MCP. var: the generation request (required)
+  higgsfield: { enabled: true, schedule: "workflow_dispatch", var: "" } # generate images/video via the Higgsfield MCP. var: the generation request (required)
   remotion: { enabled: false, schedule: "workflow_dispatch", var: "" } # render a short (~10s) Remotion video from a brief. var: <brief> [--orientation ...] [--theme ...]; empty = no-op
   skill-article: { enabled: false, schedule: "workflow_dispatch", var: "" } # receipts-first launch article for any skill in this instance. var: <skill-name> [--brand <handle>] [--banner]
   spend-watch: { enabled: false, schedule: "workflow_dispatch", var: "" } # cloud-cost analyst across Neon, Vercel, Railway, GitHub Actions. var: scope selector + optional arm flag
